@@ -44,21 +44,27 @@ Provision a local **Docker container** using **Terraform**, perform operations l
 Clone this Repository
 
 git clone https://github.com/Yunus705/IaC-Terraform-Docker.git
+
 cd IaC-Terraform-Docker
 
 1️⃣ Initialize Terraform
+
 terraform init
 
 2️⃣ Preview Plan
+
 terraform plan
 
 3️⃣ Apply Configuration
+
 terraform apply -auto-approve
 
 4️⃣ Verify Container
+
 docker ps
 
 🔍 Verifying the Setup
+
 Once applied, Terraform will start an NGINX container accessible at:
 
 📍 http://localhost:8080
@@ -66,14 +72,19 @@ Once applied, Terraform will start an NGINX container accessible at:
 Open it in your browser. You should see the NGINX welcome page.
 
 5️⃣ Destroy Infrastructure
+
 terraform destroy -auto-approve
 
 ---
 
 🙋 Author
+
 Yunus Sharif
+
 📧 yunussharif705@gmail.com
 
 📌 Note
+
 Docker must be installed and running.
+
 Tested on Terraform v1.5+ and Docker Desktop on Windows.
